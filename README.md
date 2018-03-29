@@ -6,7 +6,10 @@ UI test automation framework for Phoenix Android and iOS apps based on Appium, T
 
 ### Pre-requisites
 
-Java, Appium and Maven must be installed.
+Java and Appium must be installed.
+
+Download Java here:
+https://java.com/en/download/manual.jsp
 
 Download Appium here:
 https://github.com/appium/appium-desktop/releases/latest
