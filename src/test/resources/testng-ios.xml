@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Phoenix">
+    <test name="iOS UI Tests">
+        <groups>
+            <run>
+                <include name="ios"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.tantaluminnovations.uitests.tests"/>
+        </packages>
+    </test>
+</suite>
