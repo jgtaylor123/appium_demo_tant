@@ -16,7 +16,18 @@ https://github.com/appium/appium-desktop/releases/latest
 
 ### Configure
 
-Define `browser` system property before executing tests or at run time. The default selection is `android`.
+Define `platrform` system property before executing tests or at run time. The default selection is `android` in the config.properties file.
+
+to modify the platform at runtime in a Jenkins execution shell:
+1) simply echo the platform to the config file 
+2) overwrite the default testng.xml file with the platform specific file.  This will include only the tests we want to use for the platform under test.
+3) create the mvn package
+
+```bash
+echo "platform=ios" > src/test/resources/config.properties
+cp src/test/resources/testng-ios.xml src/test/resources/testng.xml
+./apache-maven-3.5.3/bin/mvn -B clean package -DskipTests=true
+```
 
 ### Execute tests
 
